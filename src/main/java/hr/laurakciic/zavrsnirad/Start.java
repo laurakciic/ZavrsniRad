@@ -5,12 +5,15 @@
  */
 package hr.laurakciic.zavrsnirad;
 
+import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
+import org.hibernate.Hibernate;
+
 /**
  *
  * @author Laura
  */
 public class Start {
     public static void main(String[] args) {
-        
+        HibernateUtil.getSessionFactory().openSession();
     }
 }
