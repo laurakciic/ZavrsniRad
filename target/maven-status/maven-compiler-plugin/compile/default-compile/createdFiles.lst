@@ -1,1 +1,7 @@
+hr\laurakciic\zavrsnirad\model\Entitet.class
+hr\laurakciic\zavrsnirad\model\Grupa.class
 hr\laurakciic\zavrsnirad\Start.class
+hr\laurakciic\zavrsnirad\utility\HibernateUtil.class
+hr\laurakciic\zavrsnirad\model\Kolegij.class
+hr\laurakciic\zavrsnirad\model\Smjer.class
+hr\laurakciic\zavrsnirad\model\Student.class

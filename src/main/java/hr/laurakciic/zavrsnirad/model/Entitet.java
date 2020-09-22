@@ -15,7 +15,7 @@ import javax.persistence.MappedSuperclass;
  * @author Laura
  */
 @MappedSuperclass
-public class Entitet {
+public abstract class Entitet { // abstract - pojasnjenje u klasi Student
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

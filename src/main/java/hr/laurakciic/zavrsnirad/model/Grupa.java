@@ -6,17 +6,21 @@
 package hr.laurakciic.zavrsnirad.model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
 
 /**
  *
  * @author Laura
  */
-@Entity // nasljeduje ju Kolegij
-public class Smjer extends Entitet{
+@Entity // ili MappedSuperclass jer ju nasljeduju ju Clan i Izostanak ? 
+public class Grupa extends Entitet{ // i kolegij
     
     private String naziv;
-
+    
+    @ManyToOne
+    private Kolegij kolegij;
+    
     public String getNaziv() {
         return naziv;
     }
@@ -24,6 +28,13 @@ public class Smjer extends Entitet{
     public void setNaziv(String naziv) {
         this.naziv = naziv;
     }
-    
+
+    public Kolegij getKolegij() {
+        return kolegij;
+    }
+
+    public void setKolegij(Kolegij kolegij) {
+        this.kolegij = kolegij;
+    }
     
 }

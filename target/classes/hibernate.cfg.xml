@@ -43,10 +43,10 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
         
         
-        <!-- Ovdje navodimo naše mapirane klase -->
-         <mapping class="hr.laurakciic.zavrsnirad.model.Student" />
+        <!-- Ovdje navodimo naše mapirane klase, tu ne stavljamo one MappedSuperclass -->
+         <mapping class="hr.laurakciic.zavrsnirad.model.Grupa" />
          <mapping class="hr.laurakciic.zavrsnirad.model.Smjer" />
-        
+         <mapping class="hr.laurakciic.zavrsnirad.model.Kolegij" />
         
     </session-factory>
 </hibernate-configuration>
