@@ -4,8 +4,8 @@
         
        <!-- 
         Potrebno je ručno kreirati bazu
-            drop database edunovajp22_hib;
-            create database edunovajp22_hib default character set utf8mb4;
+            drop database izostanciferit_hib;
+            create database izostanci_hib default character set utf8mb4;
 
 
         -->
@@ -14,7 +14,7 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mariadb://localhost:3306/edunovajp22_hib?useSSL=false</property>
+        <property name="connection.url">jdbc:mariadb://localhost:3306/izostanciferit_hib?useSSL=false</property>
         <property name="connection.username">edunova</property>
         <property name="connection.password">edunova</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
@@ -45,7 +45,7 @@
         
         <!-- Ovdje navodimo naše mapirane klase -->
          <mapping class="hr.laurakciic.zavrsnirad.model.Student" />
-         
+         <mapping class="hr.laurakciic.zavrsnirad.model.Smjer" />
         
         
     </session-factory>
