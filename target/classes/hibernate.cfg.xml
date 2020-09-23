@@ -47,6 +47,8 @@
          <mapping class="hr.laurakciic.zavrsnirad.model.Grupa" />
          <mapping class="hr.laurakciic.zavrsnirad.model.Smjer" />
          <mapping class="hr.laurakciic.zavrsnirad.model.Kolegij" />
+         <mapping class="hr.laurakciic.zavrsnirad.model.Izostanak" />
+         <mapping class="hr.laurakciic.zavrsnirad.model.Student" />
         
     </session-factory>
 </hibernate-configuration>

@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
  */
 
 @Entity
-public class Kolegij extends Smjer{ 
+public class Kolegij extends Entitet{ 
     
     private String naziv;
     private int semestar;
@@ -24,8 +24,8 @@ public class Kolegij extends Smjer{
     private int brojects;
     private String nositelj;
     
-    //@ManyToOne
-    //private Smjer smjer;
+    @ManyToOne
+    private Smjer smjer;
 
     public String getNaziv() {
         return naziv;
@@ -83,13 +83,13 @@ public class Kolegij extends Smjer{
         this.nositelj = nositelj;
     }
 
-    /*public Smjer getSmjer() {
+    public Smjer getSmjer() {
         return smjer;
     }
 
     public void setSmjer(Smjer smjer) {
         this.smjer = smjer;
-    }*/
+    }
     
 
     

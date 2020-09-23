@@ -6,12 +6,14 @@
 package hr.laurakciic.zavrsnirad.model;
 
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Entity;
 
 /**
  *
  * @author Laura
  */
-@MappedSuperclass // jer ju nasljeduju Clan i Izostanak
+
+@Entity // jer ju nasljeduju Clan i Izostanak
 public abstract class Student extends Entitet {
 // abstract - za klase koje necemo dalje koristiti pa se zabranjuje koristenje njihovih instanci
     
