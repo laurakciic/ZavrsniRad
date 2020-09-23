@@ -5,8 +5,9 @@
  */
 package hr.laurakciic.zavrsnirad;
 
-import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
-import org.hibernate.Hibernate;
+//import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
+//import org.hibernate.Hibernate;
+import hr.laurakciic.zavrsnirad.utility.PocetniInsert;
 
 /**
  *
@@ -14,6 +15,7 @@ import org.hibernate.Hibernate;
  */
 public class Start {
     public static void main(String[] args) {
-        HibernateUtil.getSessionFactory().openSession();
+        //HibernateUtil.getSessionFactory().openSession();
+       PocetniInsert.izvedi();
     }
 }
