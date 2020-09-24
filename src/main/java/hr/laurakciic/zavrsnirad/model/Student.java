@@ -14,7 +14,7 @@ import javax.persistence.Entity;
  */
 
 @Entity // jer ju nasljeduju Clan i Izostanak
-public abstract class Student extends Entitet {
+public class Student extends Entitet {
 // abstract - za klase koje necemo dalje koristiti pa se zabranjuje koristenje njihovih instanci
     
     private String ime;

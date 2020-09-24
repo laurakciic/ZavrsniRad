@@ -8,18 +8,28 @@ package hr.laurakciic.zavrsnirad.model;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.ManyToMany;
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  *
  * @author Laura
  */
 @Entity // ili MappedSuperclass jer ju nasljeduju ju Clan i Izostanak ? 
-public class Grupa extends Entitet{ // i kolegij
+public class Grupa extends Entitet{
     
     private String naziv;
     
     @ManyToOne
+    private Smjer smjer;
+    
+    @ManyToOne
     private Kolegij kolegij;
+    
+    @ManyToMany
+    private List<Student> studenti = new ArrayList<>();
     
     public String getNaziv() {
         return naziv;
@@ -35,6 +45,22 @@ public class Grupa extends Entitet{ // i kolegij
 
     public void setKolegij(Kolegij kolegij) {
         this.kolegij = kolegij;
+    }
+    
+    public Smjer getSmjer() {
+        return smjer;
+    }
+
+    public void setSmjer(Smjer smjer) {
+        this.smjer = smjer;
+    }
+    
+    public List<Student> getStudenti() {
+        return studenti;
+    }
+
+    public void setStudenti(List<Student> studenti) {
+        this.studenti = studenti;
     }
     
 }
