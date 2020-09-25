@@ -19,7 +19,7 @@ public class Student extends Entitet {
     
     private String ime;
     private String prezime;
-    private String jmbag;
+    private String oib;
 
     public String getIme() {
         return ime;
@@ -37,12 +37,12 @@ public class Student extends Entitet {
         this.prezime = prezime;
     }
 
-    public String getJmbag() {
-        return jmbag;
+    public String getOib() {
+        return oib;
     }
 
-    public void setJmbag(String jmbag) {
-        this.jmbag = jmbag;
+    public void setOib(String oib) {
+        this.oib = oib;
     }
     
     

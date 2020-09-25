@@ -7,6 +7,7 @@
 package hr.laurakciic.zavrsnirad.utility;
 
 import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
+import hr.laurakciic.zavrsnirad.utility.OibGenerator; 
 import hr.laurakciic.zavrsnirad.model.Student;
 import hr.laurakciic.zavrsnirad.model.Smjer;
 import hr.laurakciic.zavrsnirad.model.Grupa;
@@ -42,8 +43,8 @@ public class PocetniInsert {
         
         Faker faker = new Faker();
         
-        String[] jmbagovi = {"4123456789","5213456789","3312456789","2412356789","8512346789","6612345789",
-        "3712345689","3812345679","9912345678","2012345678"};
+        //String[] oibi = {"4123456789","5213456789","3312456789","2412356789","8512346789","6612345789",
+        //"3712345689","3812345679","9912345678","2012345678"};
         
         Student student;
         List<Student> studenti_predd_SR_Racunarstvo = new ArrayList<>();
@@ -54,13 +55,8 @@ public class PocetniInsert {
             student = new Student();
             student.setIme(faker.name().firstName());
             student.setPrezime(faker.name().lastName());
-            
-            if(i > 9){
-                student.setJmbag(null);
-            }else{
-                student.setJmbag(jmbagovi[i]);
-            }
-     
+            student.setOib(OibGenerator.getOib());
+           
             session.save(student);
             
            if(i<20){
