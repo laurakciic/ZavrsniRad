@@ -15,6 +15,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
  *
  * @author Laura
  */
+// singleton
 public class HibernateUtil {
     private static StandardServiceRegistry registry;
     private static SessionFactory sessionFactory;

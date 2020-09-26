@@ -1,10 +1,13 @@
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\Start.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\utility\OibGenerator.java
-C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Grupa.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Izostanak.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Entitet.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\utility\PocetniInsert.java
-C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Student.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\controller\Obrada.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Kolegij.java
-C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\utility\HibernateUtil.java
 C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Smjer.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\utility\ZavrsniException.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Grupa.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\model\Student.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\controller\ObradaSmjer.java
+C:\jp22\ZavrsniRad\src\main\java\hr\laurakciic\zavrsnirad\utility\HibernateUtil.java
