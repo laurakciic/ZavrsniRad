@@ -12,7 +12,7 @@ import hr.laurakciic.zavrsnirad.utility.ZavrsniException;
  *
  * @author Laura
  */
-public class ObradaSmjer {
+public class ObradaSmjer extends Obrada<Smjer>{
     
     public ObradaSmjer(Smjer smjer) {
         super(smjer);

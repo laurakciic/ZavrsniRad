@@ -33,7 +33,7 @@ public class Start {
             obradaSmjer.create();
         } catch (ZavrsniException ex) {
             System.out.println(ex.getPoruka());
-        }
+        } 
        
     }
 }
