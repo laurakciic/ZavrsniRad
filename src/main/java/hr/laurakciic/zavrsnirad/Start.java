@@ -27,7 +27,7 @@ public class Start {
        Smjer s = new Smjer();
        
        ObradaSmjer obradaSmjer = new ObradaSmjer(s);
-              
+       s.setNaziv("Lorem ipsum dolor sit amet, consectetur vestibulum.");
        
        try {
             obradaSmjer.create();
