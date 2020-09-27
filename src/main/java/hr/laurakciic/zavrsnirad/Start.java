@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class Start {
     public static void main(String[] args) {
         //HibernateUtil.getSessionFactory().openSession();
-       //PocetniInsert.izvedi();
+       //PocetniInsert.izvedi(); 
        
        Smjer s = new Smjer();
        
@@ -33,7 +33,7 @@ public class Start {
             obradaSmjer.create();
         } catch (ZavrsniException ex) {
             System.out.println(ex.getPoruka());
-        } 
+        }
        
     }
 }
