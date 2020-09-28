@@ -8,6 +8,7 @@ package hr.laurakciic.zavrsnirad.controller;
 import hr.laurakciic.zavrsnirad.utility.ZavrsniException;
 import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
 import org.hibernate.Session;
+import java.util.List;
 
 /**
  *
@@ -37,6 +38,18 @@ public abstract class Obrada<T> { // <T> stoji za type parametar
         return entitet;
     }
     
+    public T createAll(List<T> lista) throws ZavrsniException {
+        session.beginTransaction();
+        for (T t : lista) {
+            setEntitet(t);
+            kontrolaCreate();
+            session.save(t);
+        }
+        session.getTransaction().commit();
+
+        return entitet;
+    }
+    
     public T update() throws ZavrsniException {
         kontrolaUpdate();
         save();
@@ -55,6 +68,14 @@ public abstract class Obrada<T> { // <T> stoji za type parametar
         session.beginTransaction();
         session.save(entitet);
         session.getTransaction().commit();
+    }
+    
+    public T getEntitet() {
+        return entitet;
+    }
+
+    public void setEntitet(T entitet) {
+        this.entitet = entitet;
     }
     
 }

@@ -11,6 +11,9 @@ import hr.laurakciic.zavrsnirad.utility.ZavrsniException;
 import hr.laurakciic.zavrsnirad.utility.PocetniInsert;
 import hr.laurakciic.zavrsnirad.controller.ObradaSmjer;
 import hr.laurakciic.zavrsnirad.model.Smjer;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,16 +27,25 @@ public class Start {
         //HibernateUtil.getSessionFactory().openSession();
        //PocetniInsert.izvedi(); 
        
-       Smjer s = new Smjer();
+       Smjer s;
        
-       ObradaSmjer obradaSmjer = new ObradaSmjer(s);
-       s.setNaziv("Lorem ipsum dolor sit amet, consectetur vestibulum.");
+       ObradaSmjer obradaSmjer = new ObradaSmjer();
+       List<Smjer> lista = new ArrayList<>();
+        long pocetak = System.currentTimeMillis();
+        for (int i = 0; i < 1000; i++) {
+            s = new Smjer();
+            s.setNaziv("Lorem ipsum dolor sit amet");
+            lista.add(s);
+        }
        
        try {
-            obradaSmjer.create();
+           obradaSmjer.createAll(lista);
         } catch (ZavrsniException ex) {
             System.out.println(ex.getPoruka());
         }
        
+       long kraj = System.currentTimeMillis();
+
+        System.out.println(kraj - pocetak);
     }
 }

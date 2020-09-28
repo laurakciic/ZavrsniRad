@@ -19,6 +19,10 @@ public class ObradaSmjer extends Obrada<Smjer>{
         super(smjer);
     }
     
+     public ObradaSmjer() {
+        super();
+    }
+    
     @Override
     protected void kontrolaCreate() throws ZavrsniException {
         kontrolaNaziv();
