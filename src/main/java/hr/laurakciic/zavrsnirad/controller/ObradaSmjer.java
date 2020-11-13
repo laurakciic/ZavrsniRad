@@ -8,6 +8,8 @@ package hr.laurakciic.zavrsnirad.controller;
 import hr.laurakciic.zavrsnirad.utility.ZavrsniException;
 import hr.laurakciic.zavrsnirad.model.Smjer;
 import java.math.BigDecimal;
+import java.util.List;
+
 
 /**
  *
@@ -21,6 +23,11 @@ public class ObradaSmjer extends Obrada<Smjer>{
     
      public ObradaSmjer() {
         super();
+    }
+     
+     @Override
+    public List<Smjer> getPodaci() {
+        return session.createQuery("from Smjer").list();
     }
     
     @Override
@@ -64,5 +71,6 @@ public class ObradaSmjer extends Obrada<Smjer>{
             throw new ZavrsniException(poruka);
         }
     }
-    
+
+
 }

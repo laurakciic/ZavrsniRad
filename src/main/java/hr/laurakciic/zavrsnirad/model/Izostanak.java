@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
  * @author Laura
  */
 @Entity
-public class Izostanak extends Entitet{ 
+public class Izostanak extends Student{ 
     
     private Date datum;
     

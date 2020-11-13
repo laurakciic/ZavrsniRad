@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
  */
 
 @Entity
-public class Kolegij extends Entitet{ 
+public class Kolegij extends Student{ 
     
     private String naziv;
     private int semestar;

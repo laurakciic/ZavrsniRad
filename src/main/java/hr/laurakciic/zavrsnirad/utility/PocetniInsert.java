@@ -7,7 +7,7 @@
 package hr.laurakciic.zavrsnirad.utility;
 
 import hr.laurakciic.zavrsnirad.utility.HibernateUtil;
-import hr.laurakciic.zavrsnirad.utility.OibGenerator; 
+import hr.laurakciic.zavrsnirad.utility.Oib; 
 import hr.laurakciic.zavrsnirad.model.Student;
 import hr.laurakciic.zavrsnirad.model.Smjer;
 import hr.laurakciic.zavrsnirad.model.Grupa;
@@ -55,7 +55,7 @@ public class PocetniInsert {
             student = new Student();
             student.setIme(faker.name().firstName());
             student.setPrezime(faker.name().lastName());
-            student.setOib(OibGenerator.getOib());
+            student.setOib(Oib.getOibItCentrala());
            
             session.save(student);
             

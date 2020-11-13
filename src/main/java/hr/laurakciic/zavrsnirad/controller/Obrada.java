@@ -19,6 +19,7 @@ public abstract class Obrada<T> { // <T> stoji za type parametar
     protected T entitet;
     protected Session session;
     
+    public abstract List<T> getPodaci();
     protected abstract void kontrolaCreate() throws ZavrsniException;
     protected abstract void kontrolaUpdate() throws ZavrsniException;
     protected abstract void kontrolaDelete() throws ZavrsniException;
